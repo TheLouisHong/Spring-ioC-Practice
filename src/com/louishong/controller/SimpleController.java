@@ -12,7 +12,7 @@ import com.louishong.domain.Person;
 public class SimpleController {
 
 	@RequestMapping("/{name}")
-	private Person getPerson(
+	public Person getPerson(
 			@RequestParam(value = "name", required = false, defaultValue = "Fucking Nobody") String name) {
 
 		Person person = new Person();
